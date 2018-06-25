@@ -1,6 +1,6 @@
-# React, Redux and Authentication Truffle Box
+# Authenticate, Manage Profile, Organziations and Projects, Solidity, React, Redux and Authentication
 
-In addition to Webpack and React, this box adds: react-router, redux and redux-auth-wrapper for authentication powered by a smart contract. Great for building your own auth system.
+Using Solidity, Webpack and React, this DAPP builds on Truffle's react-auth box. A great starting point for building your own project management system.
 
 ## Installation
 
@@ -9,29 +9,34 @@ In addition to Webpack and React, this box adds: react-router, redux and redux-a
     npm install -g truffle
     ```
 
-2. Download the box. This also takes care of installing the necessary dependencies.
+2. Clone the repository.
     ```javascript
-    truffle unbox react-auth
+    git clone https://github.com/clifer/eth-project-manager.git
     ```
 
-3. Run the development console.
+3. Install the node modules
+    ```javascript
+    node install
+    ```
+
+4. Run the development console.
     ```javascript
     truffle develop
     ```
 
-4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
+5. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
     ```javascript
     compile
     migrate
     ```
 
-5. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated.
+6. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated.
     ```javascript
     // Serves the front-end on http://localhost:3000
     npm run start
     ```
 
-6. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
+7. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
     ```javascript
     // If inside the development console.
     test
@@ -40,13 +45,13 @@ In addition to Webpack and React, this box adds: react-router, redux and redux-a
     truffle test
     ```
 
-7. Jest is included for testing React components. Compile your contracts before running Jest, or you may receive some file not found errors.
+8. Jest is included for testing React components. Compile your contracts before running Jest, or you may receive some file not found errors.
     ```javascript
     // Run Jest outside of the development console for front-end component tests.
     npm run test
     ```
 
-8. To build the application for production, use the build command. A production build will be in the build_webpack folder.
+9. To build the application for production, use the build command. A production build will be in the build_webpack folder.
     ```javascript
     npm run build
     ```
@@ -55,7 +60,7 @@ In addition to Webpack and React, this box adds: react-router, redux and redux-a
 
 * __How do I use this with the EthereumJS TestRPC?__
 
-    It's as easy as modifying the config file! [Check out our documentation on adding network configurations](http://truffleframework.com/docs/advanced/configuration#networks). Depending on the port you're using, you'll also need to update line 34 of `src/util/web3/getWeb3.js`.
+    It's as easy as modifying the config file! [Check out the Truffle documentation on adding network configurations](http://truffleframework.com/docs/advanced/configuration#networks). Depending on the port you're using, you'll also need to update line 34 of `src/util/web3/getWeb3.js`.
 
 * __Why is there both a truffle.js file and a truffle-config.js file?__
 
@@ -65,6 +70,6 @@ In addition to Webpack and React, this box adds: react-router, redux and redux-a
 
     The production build will be in the build_webpack folder. This is because Truffle outputs contract compilations to the build folder.
 
-* __Where can I find more documentation?__
+* __Where can I find more documentation about Truffle?__
 
-    This box is a marriage of [Truffle](http://truffleframework.com/) and a React setup created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md). Either one would be a great place to start!
+    This DAPP uses [Truffle](http://truffleframework.com/) and a React Authentication setup created with [react-auth](https://truffleframework.com/boxes/react-auth). This would be a great place to start!
