@@ -16,7 +16,7 @@ Using Solidity, Webpack and React, this DAPP builds on Truffle's react-auth box.
 
 3. Install the node modules
     ```javascript
-    node install
+    npm install
     ```
 
 4. Run the development console.
