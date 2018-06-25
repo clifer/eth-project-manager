@@ -56,6 +56,13 @@ Using Solidity, Webpack and React, this DAPP builds on Truffle's react-auth box.
     npm run build
     ```
 
+## TODO
+
+* Add page to update Orgs
+* Add Project contract and supporting pages
+* Add Orgs and Projects to Dashboard
+* Create Token
+
 ## FAQ
 
 * __How do I use this with the EthereumJS TestRPC?__
