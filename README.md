@@ -1,4 +1,4 @@
-# Authenticate, Manage Profile, Organziations and Projects, Solidity, React, Redux and Authentication
+# Authenticate, Manage Profile, Organizations and Projects, Solidity, React, Redux and Authentication
 
 Using Solidity, Webpack and React, this DAPP builds on Truffle's react-auth box. A great starting point for building your own project management system.
 
